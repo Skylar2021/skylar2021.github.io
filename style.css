@@ -1,10 +1,262 @@
+html {
+  margin: 0;
+  padding: 0;
+}
 
-
+/*  banner   */
 .banner {
   background-color: lightgray;
   display: flex;
+  flex-direction: row;
+  width: 1250px;
+  
+  
+  
+}
+
+.banner-img {
+  width: 55%;
+  margin: 32px 24px;
+}
+
+.banner-text {
+  display: flex;
+  justify-content: center;
+  
+  flex-direction: column;
+  width: 40%;
+  
+}
+
+.banner-text h2 {
+  text-align: left;
+}
+
+.banner-text button.btn {
+  display: block;
+  
+}
+
+/*    main-information   */
+.main-information {
+  display: flex;
+  width: 1250px;
+  border-bottom: 1px solid lightgray;
+  justify-content: space-between;
+}
+
+.main-info-img {
+  width: 100%;
+}
+
+.main-left {
+  width: 60%;
+  padding: 32px 24px;
+  border-right: 1px solid lightgray;
+  
+ 
+}
+
+.main-right {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  align-items: center;
+  width: 40%;
+}
+
+.right-1 {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  padding: 16px;
+}
+
+
+
+.right-2 {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  border-top: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  padding: 16px;
+}
+
+.right-3 {
+  display: flex;
+  padding: 16px;
+  width: 500px;
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  background-color: lightgray;
+}
+
+.right-1-img {
+  width: 150px;
+  height: auto;
+  padding-right: 10px;
+}
+.right-2-img {
+  width: 150px;
+  height: auto;
+  padding-right: 10px;
+}
+.right-3-img {
+  width: 150px;
+  height: auto;
+  padding-right: 10px;
+}
+
+/*   flex-course card group   
+
+.course {
+  background-color: lightgray;
+}
+
+.course h2 {
+  text-align: center;
+}
+
+.card-group {
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: space-around;
+}
+
+.card-1-text {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  
+}
+.card-1 {
+  width: 30%;
+}
+
+.card-2-text {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  
+}
+.card-2 {
+  width: 30%;
+}
+
+.card-3-text {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.card-3 {
+  width: 30%;
+}
+
+.card-4-text {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.card-4 {
+  width: 30%;
+}
+
+.card-4-text {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.card-5 {
+  width: 30%;
+}
+
+.card-5-text {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.card-6 {
+  width: 30%;
+}
+
+.card-6-text {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  
+}
+*/
+
+/*  bootstrap-card-courses  */
+
+
+.courses {
+  background-color: lightgray;
+}
+
+.courses h2 {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.courses-card {
+  padding: 32px 72px;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+/*    thesis    */
+
+.thesis-exhibit {
+  width: 1250px;
 
 }
 
-.banner-text {}
+.thesis-exhibit h2 {
+  text-align: center;
+  padding: 32px;
+}
+
+.thesis {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.video {
+  width: 60%;
+  margin: 0px 24px 24px 24px;
+}
+
+video {
+  width: 100%;
+}
+
+
+
+/*   footer    */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.footer-text {
+
+}
 

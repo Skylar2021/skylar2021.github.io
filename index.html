@@ -11,20 +11,24 @@
     <title>ColmarAcademy</title>
   </head>
   <body>
+  <div class="main-container">
+    
     <!----navbar---->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       
-      
-      <div class="col">
+      <div class="col-8">
         <a class="navbar-brand" href="#">
           <img class="nav-brand" src="images/ic-logo.svg">ColmarAcademy
         </a>
       </div>
         
-      <div class="col justify-content-end">
+      <div>
         <div class="navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav d-flex justify-content-end">
             <li class="nav-item active">
               <a class="nav-link" href="#">On campus</a>
             </li>
@@ -42,45 +46,301 @@
         </div>
       </div>
     </nav>
-    <!----ned of navbar--->
+    <!----end of navbar--->
 
-    <!----banner---->
+    <!-------banner---->
+    <div class="banner">
+      
+      <img class="banner-img" src="images/banner.jpg" alt="banner">
+      
+      <div class="banner-text">
+        <h2>Learn something new everyday</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p><button type="button" class="btn btn-dark btn-lg">Start</button></p>
 
-      <div class="container-fluid">
-        <div class="banner">
-          
-          <img src="images/banner.jpg" alt="banner" width="60%" >
+      </div>
+    </div>
 
-          <div class="banner-text" width="40%">
-            <h1 class="display-4">Learn something new everyday</h1>
-            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-            <button type="button" class="btn btn-dark"><h5>Start here</h5></button>
+    <!---end of banner---->
+
+
+    <!----main information--->
+
+    <div class="row main-information">
+      <div class="main-left">
+        
+        <img class="main-info-img" src="images/information-main.jpg" alt="information-main">
+        
+        <div class="main-info-imgtext">
+          <h3>It doesn't hurt to keep practicing</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra mauris in aliquam sem. Fusce id velit ut tortor pretium viverra.</p>
+          <br>
+          <p>Emanuel, Sr Strategist at Hiring.com</p>
+        </div>
+      </div>
+
+      <div class="main-right">
+        <div class="right-1">
+          <div>
+            <img class="right-1-img" alt="information-orientation" src="images/information-orientation.jpg">
           </div>
+          <div class="right-1-text">
+            <h5>Orientation date</h5>
+            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+            <p>Read more</p>
+          </div>
+        </div>
+        <div class="right-2">
+          <div>
+            <img class="right-2-img" alt="" src="images/information-campus.jpg">
+          </div>
+          <div class="right-2-text">
+            <h5>Our campus</h5>
+            <p>Find which campus is close by you</p>
+            <p>Read more</p>
+          </div>
+        </div>
+        <div class="right-3">
+          <div >
+            <img class="right-3-img" alt="" src="images/information-guest-lecture.jpg">
+          </div>
+          <div class="right-3-text">
+            <h5>Our guest lecture</h5>
+            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+            <p>Read more</p>
+          </div>
+        </div>
+    </div>
+   
+
+  
+
+
+
+    <!----end of main information---->
+    
+    <!----course card group with flex----->
+    <!--
+    <div class="row course">
+      <h2>Start Learning</h2>
+      <div class="card-group">
+        <div class="card-1">
+          
+          
+          <div class="card-1-text">
+            <img class="card-1-img" alt="Software engineering" src="images/course-software.jpg">
+            <h5>Software engineering</h5>
+            <p>COURSES</p>
+            <p>Web Development, Mobile Development, iOT, APIs</p>
+          </div>
+          
+          
+        </div>
+      
+        <div class="card-2">
+          
+          <div class="card-2-text">
+            <img class="card-2-img" alt="Computer Art" src="images/course-computer-art.jpg">
+            <h5>Computer Art</h5>
+            <p>COURSES</p>
+            <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+          </div>
+        </div>
+      
+        <div class="card-3">
+          
+          <div class="card-4-text">
+            <img class="card-3-img" alt="" src="images/course-design.jpg">
+            <h5>Design</h5>
+            <p>COURSES</p>
+            <p>User Experience Design, User Research, Visual Design</p>
+          </div>
+        </div>
+      
+        <div class="card-4">
+          
+          <div class="card-4-text">
+            <img class="card-4-img" alt="" src="images/course-data.jpg">
+            <h5>Data</h5>
+            <p>COURSES</p>
+            <p>Data Science, Big Data, SQL, Data Visualization</p>
+          </div>
+        </div>
+      
+        <div class="card-5">
+          
+          <div class="card-5-text">
+            <img class="card-5-img" alt="" src="images/course-business.jpg">
+            <h5>Business</h5>
+            <p>COURSES</p>
+            <p>Product Development, Business Development, Startup</p>
+          </div>
+        </div>
+      
+        <div class="card-6">
+      
+          <div class="card-6-text">
+            <img class="card-6-img" alt="Marketing" src="images/course-marketing.jpg">
+            <h5>Marketing</h5>
+            <p>COURSES</p>
+            <p>Analytics, Content Marketing, Mobile Marketing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---end of course card group with flex---->
+    
+  
+    <!-------bootstarp card group------->
+    
+    <div class="courses">
+      <h2>Start Learning</h2>
+      <div class="row row-cols-1 row-cols-md-3 courses-card">
+        <div class="col card-content">
+          <div class="card h-100 w-100">
+            <img src="images/course-software.jpg" class="card-img-top" alt="Computer Art">
+            <div class="card-body">
+              <h5 class="card-title">Software engineering</h5>
+              <p class="card-subtitle">COURSES</p>
+              <p class="card-text">Web Development, Mobile Development, iOT, APIs</p>
+            </div>
+          </div>
+        </div>
+        <div class="col card-content">
+          <div class="card h-100">
+            <img src="images/course-computer-art.jpg" class="card-img-top" alt="Computer Art">
+            <div class="card-body">
+              <h5 class="card-title">Computer Art</h5>
+              <p class="card-subtitle">COURSES</p>
+              <p class="card-text">This is a short card.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col card-content">
+          <div class="card h-100">
+            <img src="images/course-design.jpg" class="card-img-top" alt="Design">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-subtitle">COURSES</p>
+              <p class="card-text">User Experience Design, User Research, Visual Design</p>
+            </div>
+          </div>
+        </div>
+        <div class="col card-content">
+          <div class="card h-100">
+            <img src="images/course-data.jpg" class="card-img-top" alt="Data">
+            <div class="card-body">
+              <h5 class="card-title">Data</h5>
+              <p class="card-subtitle">COURSES</p>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col card-content">
+          <div class="card h-100">
+            <img src="images/course-business.jpg" class="card-img-top" alt="Business">
+            <div class="card-body">
+              <h5 class="card-title">Business</h5>
+              <p class="card-subtitle">COURSES</p>
+              <p class="card-text">Product Development, Business Development, Startup</p>
+            </div>
+          </div>
+        </div>
+        <div class="col card-content">
+          <div class="card h-100">
+            <img src="images/course-marketing.jpg" class="card-img-top" alt="Marketing">
+            <div class="card-body">
+              <h5 class="card-title">Marketing</h5>
+              <p class="card-subtitle">COURSES</p>
+              <p class="card-text">Analytics, Content Marketing, Mobile Marketing</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+    <!------bootstarp card group----->
+    
+    <!-----Thesis----->
+
+    <div class="row thesis-exhibit">
+      <h2>Thesis exhibit</h2>
+      <div class="thesis">
+        <div class="video">
+          <video src="videos/thesis.mp4" alt="thesis-video" controls></video>
+          <h4>Reimagine urban</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor dignissim convallis aenean et tortor at. Nisl vel pretium lectus quam id leo in vitae turpis.
+          </p>
+        </div>
+        <div class="list">
+          <div class="list-1">
+            <div>
+              <img class="list-1-img" alt="thesis-fisma" src="images/thesis-fisma.jpg">
+              <div>
+                <h5>Fisma: Design and Prototype</h5>
+                <p>Designer showcase of new Prototype product</p>
+              </div>
+            </div>
+          </div>
+          <div class="list-2">
+            <div>
+              <img class="list-2-img" alt="thesis-now-and-then" src="images/thesis-now-and-then.jpg">
+              <div>
+                <h5>Now and then</h5>
+                <p>Research study about New York</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+
+
+
 
         </div>
-        
+
+
+
       </div>
-      
+    </div>
 
-      <div>It dosen't hurt to keep practicing</div>
-      <div>Start learning</div>
-      <div>Thesis exhibit</div>
 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>    
 
  
-
-    <footer class="container-fluid fixed-bottom ms-24px">
-      <div class="row d-flex justify-content-between ">
-        <div class="col-6 ">
-          &copy 2016 Colmar Academy. All rights reserved
-        </div>
-        <div class="col-2 justify-content-end align-items-end ms-auto">
-         Terms Privacy
-        </div>
+  <!----footer----->
+  <footer class="container-fluid">
+    <div class="footer">
+      <div class="footer-text">
+        &copy 2016 Colmar Academy. All rights reserved
       </div>
-      
-      
-    </footer>
+      <div class="justify-content-end align-items-end ms-auto">
+        Terms Privacy
+      </div>
+    </div>
+    
+    
+  </footer>
 
 
 
