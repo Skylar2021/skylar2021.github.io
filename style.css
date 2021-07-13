@@ -3,6 +3,10 @@ html {
   padding: 0;
 }
 
+.main-container {
+  overflow: hidden;
+}
+
 /*   navbar   */
 
 .navbar {
@@ -14,39 +18,58 @@ html {
   margin-right: 24px;
   display: flex;
   justify-content: flex-end;
-  flex-wrap: nowrap;
+  
 }
 
+.icon-display {
+    display: none;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    margin-left: 32px;
+  }
 
-
+.icon {
+  display: none;
+  width: 25%;
+}
 
 /*  banner   */
 .banner {
   background-color: lightgray;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: wrap;
+  flex-wrap: wrap;
   width: auto;
-  flex-shrink: 1;
+  
     
 }
 
 .banner-img {
-  width: 55%;
-  margin: 32px 24px;
-  flex-shrink: 1;
+  width: 60%;
+  padding: 32px 24px;
+  
+}
+
+.b-img {
+
+  width: 100%;
+  height: auto;
+  
+
 }
 
 .banner-text {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 35%;
-  margin-left: 24px;
-  flex-shrink: 1;
+  width: 30%;
+  
 }
 
 .banner-text h2 {
   text-align: left;
+  font-weight: bolder;
 }
 
 button {
@@ -57,13 +80,15 @@ button {
 
 .main-information {
   display: flex;
-  width: 1250px;
+  flex-wrap: wrap;
+  width: auto;
   border-bottom: 1px solid lightgray;
   justify-content: space-between;
 }
 
 .main-info-img {
   width: 100%;
+  
 }
 
 .main-left {
@@ -77,41 +102,53 @@ button {
   display: flex;
   flex-direction: column;
   margin-top: 16px;
+  padding: 0px;
   align-items: center;
   width: 40%;
 }
 
 .right-1 {
   display: flex;
-  width: 500px;
+  width: 100%;
   border-bottom: 1px solid lightgray;
   border-right: 1px solid lightgray;
   padding: 16px;
+  
 }
 
 
 
 .right-2 {
   display: flex;
-  width: 500px;
+  width: 100%;
   border-top: 1px solid lightgray;
   border-right: 1px solid lightgray;
   padding: 16px;
+  
 }
 
 .right-3 {
   display: flex;
   padding: 16px;
-  width: 500px;
+  width: 100%;
   border-bottom: 1px solid lightgray;
   border-right: 1px solid lightgray;
   
 }
 
 .right-img {
-  width: 150px;
+  width: 35%;
+  
+}
+
+.info-img {
+  width: 100%;
   height: auto;
   padding-right: 10px;
+}
+
+.right-text {
+  width: 65%;
 }
 
 .rm {
@@ -141,7 +178,9 @@ button {
 /*    thesis    */
 
 .thesis-exhibit {
-  width: 1250px;
+  width: auto;
+  padding: 0;
+  margin: 0;
 
 }
 
@@ -153,6 +192,7 @@ button {
 .thesis {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
 .playlist {
@@ -203,9 +243,6 @@ video {
 }
 
 
-
-
-
 /*   footer    */
 
 .footer {
@@ -219,3 +256,70 @@ video {
   margin: 16px 24px;
 }
 
+/*    Media Qurey    */
+
+@media screen and (max-width: 576px) {
+ /*    navbar     */
+  nav {
+    height: 64px;
+  }
+
+  .icon-display {
+    display: inline-block;
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+
+  .icon {
+    display: block;
+  }
+
+  .icon-none {
+    display: none;
+  }
+  /*    banner   */
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .banner-text {
+    width: auto;
+    margin: 32px 16px;
+    padding: 0;
+    box-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    
+  }
+
+  /*     main information        */
+ 
+  .main-left {
+    display: none;
+  }
+
+  .main-right {
+    width: 100%;
+    margin: 16px;
+  }
+  
+  .m-row {
+    flex-direction: column;
+  }
+
+  .right-img {
+    width: 80%;
+  }
+
+
+}

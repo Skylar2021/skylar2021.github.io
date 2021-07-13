@@ -17,14 +17,33 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
             
-      <div class="icon">
+      <div class="icon-none">
         <a class="navbar-brand" href="#">
           <img class="nav-brand" src="images/ic-logo.svg">ColmarAcademy
         </a>
+
+        
+      </div>
+
+      <div class="icon-display">
+        
+        <a class="icon" href="#">
+          <img class="icon-img" alt="" src="images/ic-logo.svg">
+        </a>
+        <a class="icon" href="#">
+          <img class="icon-img" alt="" src="images/ic-on-campus.svg">
+        </a>
+        <a class="icon" href="#">
+          <img class="icon-img" alt="" src="images/ic-online.svg">
+        </a>
+        <a class="icon" href="#">
+          <img class="icon-img" alt="" src="images/ic-login.svg">
+        </a>
+
       </div>
         
-      <div>
-        <div class="navbar-collapse">
+      
+        <div class="navbar-collapse icon-none">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="#">On campus</a>
@@ -41,18 +60,20 @@
           </ul>
           
         </div>
-      </div>
+      
     </nav>
     <!----end of navbar--->
 
     <!-------banner------->
-    <div class="row banner">
-      
-      <img class="banner-img" src="images/banner.jpg" alt="banner">
-      
+    <div class="banner">
+      <div class="banner-img">
+        <img class="b-img" src="images/banner.jpg" alt="banner">
+      </div>
       <div class="banner-text">
         <h2>Learn something new everyday</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+        
         <button type="button" class="btn btn-dark btn-lg d-block">Start here</button>
 
       </div>
@@ -75,31 +96,31 @@
       </div>
 
       <div class="main-right">
-        <div class="right-1">
-          <div>
-            <img class="right-img" alt="information-orientation" src="images/information-orientation.jpg">
+        <div class="right-1 m-row">
+          <div class="right-img">
+            <img class="info-img" alt="information-orientation" src="images/information-orientation.jpg">
           </div>
-          <div class="right-1-text">
+          <div class="right-text">
             <h5>Orientation date</h5>
             <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
             <p class="rm">Read more</p>
           </div>
         </div>
-        <div class="right-2">
-          <div>
-            <img class="right-img" alt="" src="images/information-campus.jpg">
+        <div class="right-2 m-row">
+          <div class="right-img">
+            <img class="info-img" alt="information-campus" src="images/information-campus.jpg">
           </div>
-          <div class="right-2-text">
+          <div class="right-text">
             <h5>Our campus</h5>
             <p>Find which campus is close by you</p>
             <p class="rm">Read more</p>
           </div>
         </div>
-        <div class="right-3 gray">
-          <div >
-            <img class="right-img" alt="" src="images/information-guest-lecture.jpg">
+        <div class="right-3 gray m-row">
+          <div class="right-img">
+            <img class="info-img" alt="information-guest-lecture" src="images/information-guest-lecture.jpg">
           </div>
-          <div class="right-3-text">
+          <div class="right-text">
             <h5>Our guest lecture</h5>
             <p>Join a keynote with Oliver Sack about music in medical treatment</p>
             <p class="rm">Read more</p>
