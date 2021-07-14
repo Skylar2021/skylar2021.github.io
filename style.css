@@ -1,24 +1,28 @@
-html {
-  margin: 0;
-  padding: 0;
+-html {
+    margin: 0;
+    padding: 0;
 }
 
 .main-container {
-  overflow: hidden;
+    overflow: hidden;
 }
+
 
 /*   navbar   */
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
+a.navbar-brand {
+    margin-left: 24px;
+}
+
+.navbar-icon,
+.navbar-text {
+    height: 32px;
 }
 
 .navbar-collapse {
-  margin-right: 24px;
-  display: flex;
-  justify-content: flex-end;
-  
+    margin-right: 24px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .icon-display {
@@ -27,299 +31,323 @@ html {
     position: absolute;
     width: 100%;
     margin-left: 32px;
-  }
-
-.icon {
-  display: none;
-  width: 25%;
 }
 
+.icon {
+    display: none;
+    width: 25%;
+}
+
+
 /*  banner   */
+
 .banner {
-  background-color: lightgray;
-  display: flex;
-  flex-direction: wrap;
-  flex-wrap: wrap;
-  width: auto;
-  
-    
+    background-color: lightgray;
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+    width: auto;
 }
 
 .banner-img {
-  width: 60%;
-  padding: 32px 24px;
-  
+    width: 60%;
+    padding: 32px 24px;
 }
 
 .b-img {
-
-  width: 100%;
-  height: auto;
-  
-
+    width: 100%;
+    height: auto;
 }
 
 .banner-text {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 30%;
-  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
 }
 
 .banner-text h2 {
-  text-align: left;
-  font-weight: bolder;
+    text-align: left;
+    font-weight: bolder;
 }
 
 button {
-  width: 70%;
+    width: 70%;
 }
+
 
 /*    main-information   */
 
 .main-information {
-  display: flex;
-  flex-wrap: wrap;
-  width: auto;
-  border-bottom: 1px solid lightgray;
-  justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    border-bottom: 1px solid lightgray;
+    justify-content: space-between;
 }
 
 .main-info-img {
-  width: 100%;
-  
+    width: 100%;
 }
 
 .main-left {
-  width: 60%;
-  padding: 32px 24px;
-  border-right: 1px solid lightgray;
-   
+    width: 60%;
+    padding: 32px 24px;
+    border-right: 1px solid lightgray;
 }
 
 .main-right {
-  display: flex;
-  flex-direction: column;
-  margin-top: 16px;
-  padding: 0px;
-  align-items: center;
-  width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    padding: 0px;
+    align-items: center;
+    width: 40%;
 }
 
 .right-1 {
-  display: flex;
-  width: 100%;
-  border-bottom: 1px solid lightgray;
-  border-right: 1px solid lightgray;
-  padding: 16px;
-  
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    padding: 16px;
 }
 
-
-
 .right-2 {
-  display: flex;
-  width: 100%;
-  border-top: 1px solid lightgray;
-  border-right: 1px solid lightgray;
-  padding: 16px;
-  
+    display: flex;
+    width: 100%;
+    border-top: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    padding: 16px;
 }
 
 .right-3 {
-  display: flex;
-  padding: 16px;
-  width: 100%;
-  border-bottom: 1px solid lightgray;
-  border-right: 1px solid lightgray;
-  
+    display: flex;
+    padding: 16px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    ;
 }
 
 .right-img {
-  width: 35%;
-  
+    width: 35%;
 }
 
 .info-img {
-  width: 100%;
-  height: auto;
-  padding-right: 10px;
+    width: 100%;
+    height: auto;
+    padding-right: 10px;
 }
 
 .right-text {
-  width: 65%;
+    width: 65%;
 }
 
 .rm {
-  color: rgb(0, 132, 255);
+    color: rgb(0, 132, 255);
 }
+
+.info-img-mobile {
+    display: none;
+}
+
 
 /*  bootstrap-card-courses  */
 
-
 .courses {
-  background-color: lightgray;
+    background-color: lightgray;
 }
 
 .courses h2 {
-  text-align: center;
-  margin-top: 32px;
+    text-align: center;
+    margin-top: 32px;
 }
 
 .courses-card {
-  padding: 32px 72px;
+    padding: 32px 72px;
 }
 
 .card-content {
-  padding: 16px;
+    padding: 16px;
 }
+
 
 /*    thesis    */
 
 .thesis-exhibit {
-  width: auto;
-  padding: 0;
-  margin: 0;
-
+    width: auto;
+    padding: 0;
+    margin: 0;
 }
 
 .thesis-exhibit h2 {
-  text-align: center;
-  padding: 32px;
+    text-align: center;
+    padding: 32px;
 }
 
 .thesis {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 .playlist {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
 }
 
 .list-content {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .list-img {
-  width: 35%;
-  height: auto;
-  padding: 16px;
+    width: 35%;
+    height: auto;
+    padding: 16px;
 }
 
 .list-text {
-  width: 65%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .gray {
-  background-color: lightgray;
+    background-color: lightgray;
 }
 
 .video {
-  width: 60%;
-  margin: 0px 24px 24px 24px;
+    width: 60%;
+    margin: 0px 24px 24px 24px;
 }
 
 .video h4 {
-  margin-top: 24px;
-  margin-bottom: 8px;
+    margin-top: 24px;
+    margin-bottom: 8px;
 }
 
 .video p {
-  margin-bottom: 32px;
+    margin-bottom: 32px;
 }
 
 video {
-  width: 100%;
+    width: 100%;
 }
 
 
 /*   footer    */
 
 .footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .footer-text {
-  margin: 16px 24px;
+    margin: 16px 24px;
 }
+
 
 /*    Media Qurey    */
 
 @media screen and (max-width: 576px) {
- /*    navbar     */
-  nav {
-    height: 64px;
-  }
-
-  .icon-display {
-    display: inline-block;
-    display: flex;
-    position: absolute;
-    flex-direction: row;
-    justify-content: space-around;
-
-  }
-
-  .icon {
-    display: block;
-  }
-
-  .icon-none {
-    display: none;
-  }
-  /*    banner   */
-  .banner {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .banner-img {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  .banner-text {
-    width: auto;
-    margin: 32px 16px;
-    padding: 0;
-    box-align: center;
-    font-weight: bolder;
-    font-size: xx-large;
-    
-  }
-
-  /*     main information        */
- 
-  .main-left {
-    display: none;
-  }
-
-  .main-right {
-    width: 100%;
-    margin: 16px;
-  }
-  
-  .m-row {
-    flex-direction: column;
-  }
-
-  .right-img {
-    width: 80%;
-  }
-
-
+    /*    mq-navbar     */
+    nav {
+        height: 64px;
+    }
+    .icon-display {
+        display: inline-block;
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .icon {
+        display: block;
+    }
+    .icon-none {
+        display: none;
+    }
+    /*    mq-banner   */
+    .banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-img {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .banner-text {
+        width: auto;
+        margin: 32px 16px;
+        padding: 0;
+        box-align: center;
+        font-weight: bolder;
+        font-size: xx-large;
+    }
+    /*     mq-main information        */
+    .main-left {
+        display: none;
+    }
+    .info-img {
+        display: none;
+    }
+    .main-right {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .gray-m {
+        background-color: white;
+    }
+    .m-row {
+        flex-direction: column;
+    }
+    .right-img {
+        padding: 16px;
+    }
+    .info-img-mobile {
+        display: block;
+    }
+    .right-1 {
+        border: 0;
+        margin: 0;
+    }
+    .right-2 {
+        border: 0;
+        margin: 0;
+    }
+    .right-3 {
+        border: 0;
+        margin: 0;
+    }
+    .right-text {
+        margin: 0;
+        padding: 16px;
+    }
+    /*    mq-card   */
+    .card-img-top {
+        display: none;
+    }
+    /*      mq-thesis    */
+    .thesis-exhibit h2 {
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+    .playlist,
+    .video-text {
+        display: none;
+    }
+    .video {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
 }
