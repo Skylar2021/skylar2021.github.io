@@ -1,4 +1,4 @@
--html {
+html {
     margin: 0;
     padding: 0;
 }
@@ -74,6 +74,12 @@ a.navbar-brand {
 button#bg-button {
     width: 70%;
     background-color: gray;
+    
+}
+
+
+.btn {
+    color: white;
 }
 
 
@@ -395,4 +401,8 @@ video {
         margin: 0;
         padding: 0;
     }
+}
+
+.banner-text button span.btn-text {
+    color: white;
 }
