@@ -342,10 +342,17 @@ video {
         padding: 10px;
         margin: 10px;
     }
-    .m-card-text {
+    .m-card-head {
         text-align: center;
+        font-size: xx-large;
+        font-weight: bolder;
+        margin: 16px;
+        padding: 16px;
+    }
+    .m-card-text {
+        padding: 16px;
         margin: 20px;
-        height: 50px;
+        height: 70px;
         background-color: lightgray;
     }
     .courses {
