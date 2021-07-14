@@ -71,8 +71,9 @@ a.navbar-brand {
     font-weight: bolder;
 }
 
-button {
+button#bg-button {
     width: 70%;
+    background-color: gray;
 }
 
 
@@ -292,9 +293,30 @@ video {
         width: auto;
         margin: 32px 16px;
         padding: 0;
-        box-align: center;
         font-weight: bolder;
         font-size: xx-large;
+        justify-content: space-around;
+
+    }
+    .banner-text h2 {
+        margin-bottom: 32px;
+        margin-left: 16px;
+        
+    }
+    .banner-text h4 {
+        margin-left: 16px;
+        margin-bottom: 24px;
+        
+    }
+    button {
+        background-color: lightgray;
+        align-self: center;
+        
+    }
+    span.btn-text {
+        color: white;
+        font-size: xx-large;
+        font-weight: bolder;
     }
     /*     mq-main information        */
     .main-left {
@@ -341,6 +363,7 @@ video {
         display: block;
         padding: 10px;
         margin: 10px;
+        border-top: 1px solid lightgray;
     }
     .m-card-head {
         text-align: center;
