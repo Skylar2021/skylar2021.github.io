@@ -149,6 +149,10 @@ button#bg-button {
     ;
 }
 
+.m-row:hover {
+    background-color: lightgray;
+}
+
 .right-img {
     width: 35%;
 }
@@ -167,9 +171,13 @@ button#bg-button {
     color: rgb(0, 132, 255);
 }
 
+
+
 .info-img-mobile {
     display: none;
 }
+
+
 
 
 /*  bootstrap-card-courses  */
@@ -226,6 +234,10 @@ button#bg-button {
     flex-direction: row;
 }
 
+.list-content:hover {
+    background-color: lightgray;
+}
+
 .list-img {
     width: 35%;
     height: auto;
@@ -240,9 +252,7 @@ button#bg-button {
     align-items: flex-start;
 }
 
-.gray {
-    background-color: lightgray;
-}
+
 
 .video {
     width: 60%;
