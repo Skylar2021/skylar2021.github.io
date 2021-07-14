@@ -173,6 +173,10 @@ button {
     padding: 16px;
 }
 
+.m-card {
+    display: none;
+}
+
 
 /*    thesis    */
 
@@ -333,7 +337,18 @@ video {
         padding: 16px;
     }
     /*    mq-card   */
-    .card-img-top {
+    .m-card {
+        display: block;
+        padding: 10px;
+        margin: 10px;
+    }
+    .m-card-text {
+        text-align: center;
+        margin: 20px;
+        height: 50px;
+        background-color: lightgray;
+    }
+    .courses {
         display: none;
     }
     /*      mq-thesis    */
