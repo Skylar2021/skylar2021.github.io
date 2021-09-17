@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-image: url(./img/4055-27_edit.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.75);
+    font-size: 17px;
+    /* margin-bottom: 30px; */
+}
+
+.vh100{
+    height: 100vh;
+}
+
+h1,h3, .tc{
+    text-align: center;
+}
+
+h1,h3{
+    margin: 10px 0px;
+}
+
+/* about-me */
+
+.about-me{
+    padding: 20px;
+}
+
+.quote-name{
+    text-align: right;
+}
+
+/* my-skill-and-past-works */
+/* skills */
+
+.my-skill-and-past-works{
+    padding: 5px;
+}
+.my-skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+
+.skill-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-content: center; */
+    padding: 10px;
+}
+
+.skill{
+    margin: 5px;
+    padding: 5px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skill:hover{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+i.skill-icon{
+    font-size: 50px;
+    margin: 5px;
+}
+
+.bootstrap{
+    color: #7952b3;
+}
+
+.html{
+    color: #e34c26;
+}
+
+.css{
+    color: #264de4;
+}
+
+.js{
+    color: #f0db4f;
+}
+
+.react{
+    color: rgb(97, 219, 251);
+}
+
+.what-next{
+    color: seagreen;
+}
+
+/* my works */
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.cards .card{
+    width: 240px;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    margin: 8px;
+}
+
+.cards .card:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.cards .card .card-text{
+    color: black;
+   
+}
+
+.cards .card .card-text:hover{
+    color: rgb(104, 23, 23);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.link{
+    margin: 5px 0px;
+}
+
+a.link-gh{
+    color: inherit;
+    font-size: 1.2rem;
+    padding: 2px 3px;
+
+}
+
+a.link-gh:hover{
+    color: rgb(104, 23, 23);
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+footer{
+    height: 1.6rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-top: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 5px;
+}
+
+footer .contact{
+    display: flex;
+}
+
+footer .contact p{
+    margin: 0px 2px;
+    font-size: 1.1rem;
+
+}
+
+footer .contact .email-icon{
+    font-size: 1.3rem;
+    margin: 0px 4px;
+
+}
+
+.advices:hover{
+    color: rgb(104, 23, 23);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 570px) {
+
+    .skill{
+        /* width: 20vw; */
+        width: 95px;
+        height: 120px;
+    }
+    i.skill-icon{
+        font-size: 90px;
+    }
+    .cards{
+        flex-direction: column;
+        align-content:space-around;
+    }
+
+    .cards .card{
+        width: 70vw;
+        height: 15rem;
+    }
+
+    footer .email-address{
+        display: none;
+    }
+}
