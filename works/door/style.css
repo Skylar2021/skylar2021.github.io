@@ -1,6 +1,12 @@
+*{
+  font-family: 'Work Sans';
+  text-decoration: none;
+}
+
 body {
   background-color: #010165;
   margin: 0px;
+
 }
 .header {
   background-color: #f5f4d4;
@@ -58,16 +64,24 @@ body {
   width: 120px;
   height: max-content;
   font-family: 'Work Sans';
-  background-color: #eb3636;
+  background-color: #ff0000;
   border-radius: 5px;
   padding: 6px 2px;
   font-size: 18px;
   font-weight: bolder;
   letter-spacing: 1px;
   text-align: center;
-  color: #caee00;
+  color: #ffffff;
   margin-bottom: 21px;
   cursor: pointer;
+}
+
+button{
+  display: block;
+  margin: 10px auto;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 2px 10px;
 }
 
 @media screen and (max-width: 880px){
