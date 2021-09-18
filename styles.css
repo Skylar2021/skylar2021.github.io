@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
+    font-family: 'Ubuntu';
 }
 
 body{
@@ -200,6 +203,11 @@ footer .contact p{
 footer .contact .email-icon{
     font-size: 1.3rem;
     margin: 0px 4px;
+}
+
+footer .email-address{
+    font-size: 1rem;
+    color: black;
 
 }
 
