@@ -3,9 +3,18 @@ body {
   margin: 0px;
 }
 .header {
-  background-color: #00ffff;
+  background-color: #f5f4d4;
   text-align: center;
+  padding: 5px 0px;
 }
+.header img{
+  height: 40px;
+}
+.main-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .title-row{
   margin-top: 42px;
   margin-bottom: 21px;
@@ -14,7 +23,7 @@ body {
 .instructions-title {
   display: inline;
   font-size: 18px;
-  color: #00ffff;
+  color: #f5f4d4;
   font-family: 'Work Sans'
 }
 .instructions-row{
@@ -24,14 +33,18 @@ body {
 .instructions-number {
   padding-right: 25px;
   font-family: 'Work Sans';
-  font-size: 36px;
-  color: #00ffff; 
+  font-size: 30px;
+  color: #f5f4d4; 
 }
 .instructions-text{
   padding: 10px;
   font-family: 'Work Sans';
   font-size: 14px;
-  color: #00ffff; 
+  color: #f5f4d4; 
+}
+
+.play-area{
+  margin-top: 42px;
 }
 .door-row{
   text-align: center;
@@ -43,13 +56,34 @@ body {
 .start-row{
   margin: auto;
   width: 120px;
-  height: 43px;
+  height: max-content;
   font-family: 'Work Sans';
-  background-color: #eb6536;
-  padding-top: 18px;
+  background-color: #eb3636;
+  border-radius: 5px;
+  padding: 6px 2px;
   font-size: 18px;
+  font-weight: bolder;
+  letter-spacing: 1px;
   text-align: center;
-  color: #010165;
+  color: #caee00;
   margin-bottom: 21px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 880px){
+  .main-container{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+
+  }
+  
+  .title-row{
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .play-area{
+    margin-top: 0px;
+    
+  }
 }
