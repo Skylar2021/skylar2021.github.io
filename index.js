@@ -1,21 +1,82 @@
 const advice = document.querySelector('.advices')
 const toggleBtn = document.querySelector('.nav-icon')
 const toggleList = document.querySelector('nav.web-nav')
+const navItem = document.querySelectorAll('.nav-item')
+const smallImg = document.querySelectorAll('.small-img')
+const bigImg = document.querySelector('.big-img')
 
-// let toggle = true;
+const imgArr = [
+    {
+        id: '',
+        src: '',
+        alt: ''
+    },
+    {
+        id: '',
+        src: '',
+        alt: ''
+    },
+    {
+        id: '',
+        src: '',
+        alt: ''
+    },
+    {
+        id: '',
+        src: '',
+        alt: ''
+    },
+    {
+        id: '',
+        src: '',
+        alt: ''
+    },
+    {
+        id: '',
+        src: '',
+        alt: ''
+    },
+    {
+        id: '',
+        src: '',
+        alt: ''
+    },
+    {
+        id: '',
+        src: '',
+        alt: ''
+    }
+]
+
 
 toggleBtn.addEventListener('click', ()=>{
     toggleNav()
 })
 
 const toggleNav = () =>{
-    // if(toggle){}
-    console.log('123')
     let toggle = toggleList.style
-    console.log(toggleList.style.left)
-    toggle.left = toggle.left === '0px' ? toggle.left = '-35%' : toggle.left ='0px' ;
-    // toggleList.style.left = toggleList.style.left === '0px' ? toggleList.style.left = '-35%' : toggleList.style.left ==='0px' ;
+    toggle.left = toggle.left === '0px' ? toggle.left = '-40%' : toggle.left ='0px' ;
 }
+
+const changeImg = (targetImg) =>{
+    bigImg.src = targetImg.src
+    bigImg.id = targetImg.id
+    bigImg.alt = targetImg.alt
+
+}
+
+smallImg.forEach(img=>{
+    img.addEventListener('click', ({target})=>{
+        changeImg(target)
+    })
+})
+
+navItem.forEach(item =>{
+    item.addEventListener('click', ()=>{
+        toggleNav()
+    })
+})
+
 // advice.addEventListener("mouseover", e=>{
 //     e.target.innerHTML = 'Click to give me adivces'
     

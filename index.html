@@ -20,31 +20,34 @@
         <nav class="web-nav">
             <ul class="nav-items">
                 <a class="nav-item" href="#about-me">About Me</a>
-                <a class="nav-item" href="#my-skill-and-works">Skills and Works</a>
                 <a class="nav-item" href="#gallery">Gallery</a>
+                <a class="nav-item" href="#my-skill-and-works">Skills and Works</a>
                 <a class="nav-item" href="#contact">Contact Me</a>
             </ul>
         </nav>
         <main>
-            <section id="greeting" class="greeting textc">
-                <h1>Hello World ~ Nice to meet you.</h1>
-            </section>
             <section id="about-me" class="about-me vh100">
+                <div id="greeting" class="greeting textc">
+                    <h1>Hello World ~ Nice to meet you!</h1>
+                </div>
                 <h1 class="textc">About Me</h1>
                 <div class="about-me-content">
+
+                    <article>
+                        <h3 class="my-name">Yo! I am Skylar Wong ~</h3>
+                        <p class="self-intro">
+                            Seeking position of junior front-end developer. like film shooting, RPG game, coding,
+                            reading, hiking, eating, listen to music, write diary,travelling...
+                        </p>
+                        <p class="self-intro">
+                            scroll down to enjoy my pics
+
+                        </p>
+                    </article>
                     <div class="my-photo">
                         <img class="my-img" src="./img/1.jpg" alt="funny post by skylar" />
                     </div>
-                    <article>
-                        <h3 class="my-name">Yo! I am Skylar Wong<a href="https://instagram.com/sw_share?utm_medium=copy_link"
-                                target="_blank"><i class="fab fa-instagram"></i></a> ~</h3>
-                        <p>Seeking position of junior front-end developer.
-                            <br>
-                            like film shooting, RPG game, coding, reading, hiking, eating, listen to music, write diary,
-                            travelling...
-                        </p>
-                    </article>
-                    
+
                 </div>
 
                 <!-- <div class="qoute">
@@ -52,13 +55,31 @@
                     <p class="quote-name">&mdash; <em>Viktor E. Frankl</em></p>
                 </div> -->
             </section>
-            <!-- <p id="gallery">Let me show you my photos~</p> -->
-            <section class="gallery vh100" id="gallery">
+            <section class="gallery" id="gallery">
                 <br>
-                <h1 class="textc">Film Gallery</h1>
-                <div>
-
+                <h1 class="textc">Photo(Film) Gallery</h1>
+                <main class="gallery-content">
+                    <div class="img-selector">
+                        <img class="small-img" id="lightbulb" src="./img/gallery/lightbulb.jpeg" alt="Incandescent light bulb" />
+                        <img class="small-img" id="old-light" src="./img/gallery/old-light.jpeg" alt="Chandelier" />
+                        <img class="small-img" id="rope-bridge" src="./img/gallery/rope_bridge.jpeg" alt="rope bridge" />
+                        <img class="small-img" id="sunflower" src="./img/gallery/sunflower.jpeg" alt="sunflower" />
+                        <img class="small-img" id="sunse_back" src="./img/gallery/sunset_back.jpeg" alt="sunset" />
+                        <img class="small-img" id="tm_bridge" src="./img/gallery/tm_bridge.jpg" alt="Tsing Ma Bridge" />
+                        <img class="small-img" id="turtle" src="./img/gallery/turtle.jpeg" alt="turtle" />
+                        <img class="small-img" id="window" src="./img/gallery/window.jpg" alt="window" />
+                    </div>
+                    <div class="img-display">
+                        <img class="big-img" src="./img/gallery/lightbulb.jpeg" alt="" />
+                    </div>
+                </main>
+                <div class="gallery-text textc">
+                    <p class="">Find out more in my instagram </p>
+                    <a class="ig-link" href="https://instagram.com/sw_share?utm_medium=copy_link" target="_blank">
+                        <i class="fab fa-instagram ig-icon"> </i><span> sw_share</span>
+                    </a>
                 </div>
+
             </section>
             <section class="my-skill-and-works" id="my-skill-and-works">
                 <div class="my-skill">
