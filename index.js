@@ -58,12 +58,13 @@ const showWeather = async () => {
         let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=hongkong&appid=${apiKey}`)
         if (response.ok) {
             let result = await response.json()
-            console.log(result)
-            console.log(result.weather[0])
             let weatherIcon = result.weather[0].icon 
+            let obj = result.weather[0]
             const weather = document.querySelector('.weather')
+            const weatherDescript = document.querySelector('.weather-descript')
             weather.src = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`
-
+            weather.alt = obj.description
+            weatherDescript.innerHTML = obj.description
         }
     } catch (err) {
             console.log(err.message)
@@ -74,7 +75,7 @@ const date = () =>{
     let now = new Date()
     let date = now.toDateString()
     const today = document.querySelector('.today')
-    today.innerHTML = date
+    today.innerHTML = `${date}: `
 }
 
 showWeather()

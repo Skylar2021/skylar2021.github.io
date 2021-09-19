@@ -65,7 +65,6 @@ nav.mobile-nav .nav-icon:hover{
 }
 nav .nav-items .nav-item{
     color: black;
-
 }
 
 nav .nav-items .nav-item:hover{
@@ -74,6 +73,12 @@ nav .nav-items .nav-item:hover{
 }
 
 /* about-me */
+
+.weather{
+    width: 75px;
+    background-color: rgba(0, 162, 255, 0.3);
+    border-radius: 50%;
+}
 
 .about-me{
     padding: 0px 10px 10px;

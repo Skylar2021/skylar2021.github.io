@@ -19,8 +19,9 @@ let nextPlayer,currentPlayer, pattern, toggle = true, firstPlayer = 1, gameActiv
 title.innerHTML = `Player ${firstPlayer} please.`
 
 
-const wonMessage = () =>{
-    title.innerHTML = `Player ${currentPlayer} won!`
+const wonMessage = (status) =>{
+    
+    title.innerHTML = status ? `Player ${currentPlayer} won!` : 'Tied!'
 }
 
 const resetGame = () =>{
@@ -38,6 +39,24 @@ resetBtn.addEventListener('click', resetGame)
 
 const isClick = (target) =>{
     if(target){
+        return true
+    } else {
+        return false
+    }
+}
+
+const isTie = () =>{
+    let fill = 0
+    
+    grids.forEach(grid=>{
+        if(grid.innerHTML){
+            fill++
+        } else {
+            fill
+        }
+    })
+
+    if(fill === 9){
         return true
     } else {
         return false
@@ -67,7 +86,11 @@ for(let i of grids){
             setTimeout(()=>{
                 if(isWon()){
                     gameActive = false
-                    wonMessage()
+                    wonMessage(true)
+                } else if(isTie()){
+                    gameActive = false
+                    wonMessage(false)
+
                 }
             },0)
         } else {
@@ -127,5 +150,3 @@ const isWon = () =>{
         return true
     }
 }
-
-document.addEventListener('DOMContentLoaded', isWon)
