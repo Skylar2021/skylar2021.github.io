@@ -127,13 +127,14 @@ nav .nav-items .nav-item:hover{
     filter: grayscale(40%);
     width: 150px;
     height: 100px;
+    transition-property: opacity;
+    transition-duration: 0.4s;
 }
 
 .small-img:hover{
     filter: grayscale(0%);
     opacity: 1;
     cursor: pointer;
-    /* color: cornflowerblue; */
 }
 
 .img-display{
@@ -242,6 +243,8 @@ i.skill-icon{
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     margin: 8px;
+    transition-property: opacity;
+    transition-duration: 0.3s;
 }
 
 .cards .card:hover{
@@ -339,6 +342,7 @@ footer .email-address{
     .gallery-content{
         display: flex;
         flex-wrap: wrap-reverse;
+        justify-content: center;
     }
     .img-selector{
         grid-template-columns:repeat(4, auto );
