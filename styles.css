@@ -20,10 +20,6 @@ body{
     /* margin-bottom: 30px; */
 }
 
-.vh100{
-    height: 100vh;
-}
-
 .textc{
     text-align: center;
 }
@@ -80,6 +76,7 @@ nav .nav-items .nav-item:hover{
 /* about-me */
 
 .about-me{
+    height: 85vh;
     padding: 20px;
 }
 
@@ -139,10 +136,13 @@ nav .nav-items .nav-item:hover{
     /* color: cornflowerblue; */
 }
 
+.img-display{
+    
+}
+
 .big-img{
-    width: 100%;
-    /* width: 645px;
-    height: 430px; */
+    width: 645px;
+    height: 430px;
 }
 
 .gallery-text{
@@ -346,12 +346,18 @@ footer .email-address{
         gap: 5px;
 
     }
+
 }
 
 @media screen and (max-width: 650px) {
     .small-img{
         width: 120px;
         height: 70px;
+    }
+    .big-img{
+        width: 100%;
+        height: auto;
+        margin: 2px 0px 5px;
     }
 }
 
