@@ -6,6 +6,7 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Ubuntu';
+    
 }
 
 body{
@@ -15,7 +16,7 @@ body{
     background-position: center;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.75);
-    font-size: 17px;
+    font-size: 16px;
     /* margin-bottom: 30px; */
 }
 
@@ -23,12 +24,57 @@ body{
     height: 100vh;
 }
 
-.tc{
+.textc{
     text-align: center;
 }
 
 h1,h3{
     margin: 10px 0px;
+}
+
+/* nav */
+
+nav.web-nav{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 25px;
+    position: sticky;
+    top: 0px;
+    padding-top: 2px;
+    font-size: 1.1rem;
+}
+
+nav.web-nav .nav-items{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+nav.mobile-nav{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 25px;
+    position: sticky;
+    top: 0px;
+    padding: 6px;
+    font-size: 1.3rem;
+    display: none;
+}
+nav.mobile-nav .nav-icon{
+    padding: 3px;
+}
+
+nav.mobile-nav .nav-icon:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 2px;
+    cursor: pointer;
+}
+nav .nav-items .nav-item{
+    color: black;
+
+}
+
+nav .nav-items .nav-item:hover{
+    color: rgb(104, 23, 23);
+    text-decoration: underline;
 }
 
 /* about-me */
@@ -41,10 +87,14 @@ h1,h3{
     text-align: right;
 }
 
+/* gallery */
+
+
+
 /* my-skill-and-past-works */
 /* skills */
 
-.my-skill-and-past-works{
+.my-skill-and-works{
     padding: 5px;
 }
 .my-skill{
@@ -182,12 +232,12 @@ a.link-gh:hover{
 }
 
 footer{
-    height: 1.6rem;
+    height: 1.4rem;
     background-color: rgba(255, 255, 255, 0.5);
     border-top: rgba(255, 255, 255, 0.5);
     display: flex;
     justify-content: space-between;
-    padding: 2px 5px;
+    padding: 3px 5px;
 }
 
 footer .contact{
@@ -196,19 +246,20 @@ footer .contact{
 
 footer .contact p{
     margin: 0px 2px;
-    font-size: 1.1rem;
+    font-size: 1rem;
 
 }
 
 footer .contact .email-icon{
     font-size: 1.3rem;
     margin: 0px 4px;
+    display: flex;
 }
 
 footer .email-address{
     font-size: 1rem;
     color: black;
-
+    margin-left: 3px;
 }
 
 .advices:hover{
@@ -218,12 +269,37 @@ footer .email-address{
 }
 
 @media screen and (max-width: 570px) {
+    
+    nav.web-nav{
+        background-color: #ffffffcf;
+        height: 100vh;
+        width: 30vw;
+        position: absolute;
+        top: 36px;
+        left: -35%;
+        z-index: 5;
+    }
+
+    nav.mobile-nav{
+        display: block;
+    }
+
+    nav.web-nav .nav-items{
+        display: flex;
+        flex-direction: column;
+        padding: 5px 5px;
+    }
+
+    nav.web-nav .nav-item{
+        padding: 3px 3px;
+    }
 
     .skill{
         /* width: 20vw; */
         width: 95px;
         height: 120px;
     }
+    
     i.skill-icon{
         font-size: 90px;
     }

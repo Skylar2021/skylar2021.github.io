@@ -11,13 +11,23 @@
 </head>
 <body>
     <div class="main-container">
-        <nav></nav>
+        <nav class="mobile-nav">
+            <i class="fas fa-bars nav-icon"></i>
+        </nav>
+        <nav class="web-nav">
+            <ul class="nav-items">
+                <a class="nav-item" href="#about-me">About Me</a>
+                <a class="nav-item" href="#my-skill-and-works">Skills and Works</a>
+                <a class="nav-item" href="#gallery">Gallery</a>
+                <a class="nav-item" href="#contact">Contact Me</a>
+            </ul>
+        </nav>
         <main>
-            <section id="greeting" class="greeting tc">
+            <section id="greeting" class="greeting textc">
                 <h1>Hello World ~ Nice to meet you.</h1>
             </section>
             <section id="about-me" class="about-me vh100">
-                <h1 class="tc">About Me</h1>
+                <h1 class="textc">About Me</h1>
                 <article>
                     <h3>Yo! I am Skylar <a href="https://instagram.com/sw_share?utm_medium=copy_link" target="_blank"><i class="fab fa-instagram"></i></a> ~</h3>
                     <p>Seeking position of junior front-end developer.
@@ -30,9 +40,17 @@
                     <p class="quote-name">&mdash; <em>Viktor E. Frankl</em></p> -->
                 </div>
             </section>
-            <section class="my-skill-and-past-works">
+            <!-- <p id="gallery">Let me show you my photos~</p> -->
+            <section class="gallery vh100" id="gallery">
+                <br>
+                <h1 class="textc">Film Gallery</h1>
+                <div>
+                    
+                </div>
+            </section>
+            <section class="my-skill-and-works" id="my-skill-and-works">
                 <div class="my-skill">
-                    <h1 class="tc">Skills</h1>
+                    <h1 class="textc">Skills</h1>
                     <ul class="skill-list">
                         <li class="skill"><i class="fab fa-html5 skill-icon html"></i><span class="text">HTML</span></li>
                         <li class="skill"><i class="fab fa-css3-alt skill-icon css"></i><span class="text">CSS</span></li>
@@ -44,43 +62,43 @@
                 </div>
                 <div id="my-past-works" class="my-past-works">
     
-                    <h1 class="tc">Having Fun</h1>
+                    <h1 class="textc">Having Fun</h1>
                     <div class="cards">
                         <div class="card">
-                            <h3 class="card-title tc">The Hidden Bot</h3>
+                            <h3 class="card-title textc">The Hidden Bot</h3>
                             <a href="./works/door/door.html">
                                 <img class="card-img" src="./img/door.png"/>
-                                <p class="card-text tc">Click to View</p>
+                                <p class="card-text textc">Click to View</p>
                             </a>
                         </div>
                         <div class="card">
-                            <h3 class="card-title tc">Tic Tac Toe</h3>
+                            <h3 class="card-title textc">Tic Tac Toe(in progress)</h3>
                             <a href="./works/ttt/ttt.html">
                                 <img src="./img/ttt.png" class="card-img"/>
-                                <p class="card-text tc">Click to View</p>
+                                <p class="card-text textc">Click to View</p>
                             </a>
                         </div>
                         <div class="card">
-                            <h3 class="card-title tc">coming soon...</h3>
+                            <h3 class="card-title textc">coming soon...</h3>
                             <!-- <a href="./works/door/index.html"> -->
                                 <img class="card-img"/>
-                                <p class="card-text tc">Click to View</p>
+                                <p class="card-text textc">Click to View</p>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="link">
                     <!-- <h3>Other is coming soon...</h3> -->
-                    <p class="tc"><a class="link-gh" href="https://github.com/Skylar2021" target="_blank">GitHub: https://github.com/Skylar2021</a></p>
+                    <p class="textc"><a class="link-gh" href="https://github.com/Skylar2021" target="_blank">GitHub: https://github.com/Skylar2021</a></p>
                 </div>
             </section>
         </main>
     </div>    
     <footer class="">  
-        <div class="contact"> 
+        <div class="contact" id="contact"> 
             <p>&copy Skylar Wong 2021</p>           
             <a class="email-icon" href="mailto:skylarw.tsz@gmail.com?subject=Interview%20with%20%5Bcompany%20name%5D%20for%20%5Bjob%20title%5D" target="_blank">
-                <i class="far fa-envelope"></i>
+                <i class="far fa-envelope">                </i>
                 <span class="email-address">: skylarw.tsz@gmail.com</span>
             </a>
         </div>      
