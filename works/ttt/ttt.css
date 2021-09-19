@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.main-container{
+}
+
+h1, h2{
+    text-align: center;
+    margin: 10px auto;
+}
+
+table{
+    text-align: center;
+    margin: 10px auto;
+}
+
+.grid {
+    background-color: white;
+    padding: 5px;
+    width: 80px;
+    height: 80px;
+    font-size: 60px;
+    color: black;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+.back-btn, .reset-btn{
+    /* display: block; */
+    font-size: 18px;
+    width: 60px;
+    height: 35px;
+    margin: 10px 20px;
+}

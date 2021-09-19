@@ -23,7 +23,7 @@ body{
     height: 100vh;
 }
 
-h1,h3, .tc{
+.tc{
     text-align: center;
 }
 
