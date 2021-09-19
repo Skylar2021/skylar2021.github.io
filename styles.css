@@ -83,6 +83,18 @@ nav .nav-items .nav-item:hover{
     padding: 20px;
 }
 
+.about-me .about-me-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.my-photo img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
 .quote-name{
     text-align: right;
 }
@@ -292,6 +304,15 @@ footer .email-address{
 
     nav.web-nav .nav-item{
         padding: 3px 3px;
+    }
+
+    .my-photo img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .my-name{
+        text-align: center;
     }
 
     .skill{
