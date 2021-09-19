@@ -59,11 +59,22 @@ const showWeather = async () => {
         if (response.ok) {
             let result = await response.json()
             console.log(result)
+            console.log(result.weather[0])
+            let weatherIcon = result.weather[0].icon 
+            const weather = document.querySelector('.weather')
+            weather.src = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`
+
         }
     } catch (err) {
             console.log(err.message)
-    }
+    }    
+}
 
-    
+const date = () =>{
+    let now = new Date()
+    let date = now.toDateString()
+    const today = document.querySelector('.today')
+    today.innerHTML = date
 }
 showWeather()
+date()

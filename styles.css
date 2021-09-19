@@ -77,7 +77,7 @@ nav .nav-items .nav-item:hover{
 
 .about-me{
     height: 85vh;
-    padding: 20px;
+    padding: 0px 10px 10px;
 }
 
 .about-me .about-me-content{
@@ -135,10 +135,6 @@ nav .nav-items .nav-item:hover{
     filter: grayscale(0%);
     opacity: 1;
     cursor: pointer;
-}
-
-.img-display{
-    
 }
 
 .big-img{
@@ -250,12 +246,6 @@ i.skill-icon{
 .cards .card:hover{
     background-color: rgba(255, 255, 255, 0.5);
 
-}
-
-.cards .card a{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
 }
 
 .cards .card .card-img{
@@ -370,7 +360,7 @@ footer .email-address{
     nav.web-nav{
         background-color: #fffffff0;
         height: 100vh;
-        width: 35vw;
+        width: 36vw;
         position: fixed;
         top: 36px;
         left: -40%;
