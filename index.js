@@ -76,5 +76,6 @@ const date = () =>{
     const today = document.querySelector('.today')
     today.innerHTML = date
 }
+
 showWeather()
 date()
