@@ -29,9 +29,7 @@ const resetGame = () =>{
         grid.innerHTML = null
     })
     gameActive = true
-    nextPlayer = null
-    firstPlayer = 1
-    currentPlayer = firstPlayer
+    toggle = true
     title.innerHTML = `Player ${firstPlayer} please.`
 }
 
