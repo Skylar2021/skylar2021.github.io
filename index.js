@@ -38,7 +38,7 @@ date()
 // toggle navbar
 const toggleNav = () => {
     let toggle = toggleList.style
-    toggle.left = toggle.left === '0px' ? toggle.left = '-40%' : toggle.left = '0px';
+    toggle.left = toggle.left === '0px' ? toggle.left = '-50%' : toggle.left = '0px';
 }
 
 toggleBtn.addEventListener('click', () => {
