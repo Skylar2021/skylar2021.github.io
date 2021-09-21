@@ -75,17 +75,24 @@ nav .nav-items .nav-item:hover{
 }
 
 /* about-me */
-
+.weather-col{
+    display: flex;
+    justify-content: center;
+}
+.weather-col p {
+    margin-left: 5px;
+    align-self: center;
+}
 .weather{
     margin-top: 5px;
-    width: 75px;
+    width: 65px;
     background-color: rgba(0, 162, 255, 0.3);
     border-radius: 50%;
 }
 
 .about-me{
     padding: 0px 10px 10px;
-    height: 100vh;
+    height: 95vh;
 }
 
 .about-me .about-me-content{
@@ -381,7 +388,9 @@ footer .email-address{
     }
     .self-intro{
         line-height: 1.4rem;
+        text-align:justify;
     }
+
 }
 
 @media screen and (max-width: 570px) {
@@ -411,7 +420,9 @@ footer .email-address{
     }
 
     /* about me */
-
+    .weather{
+        width: 55px;
+    }
     .my-photo img{
         width: 150px;
         height: 150px;
@@ -422,7 +433,7 @@ footer .email-address{
     }
 
     .self-intro{
-        max-width: 70vw;
+        max-width: 75vw;
     }
 
     /* gallery */
