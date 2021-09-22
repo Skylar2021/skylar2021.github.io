@@ -112,12 +112,14 @@ nav .nav-items .nav-item:hover{
     word-spacing: 2px;
     word-wrap: break-word;
     line-height: 2rem;
-    animation: leftright 0.4s;
+    animation: leftright 0.5s;
+    animation-delay: 1s;
+
 }
 
 .self-intro-scroll{
     animation: leftright 0.2s;
-    animation-delay: 2s;
+    animation-delay: 3s;
 }
 
 .quote-name{
