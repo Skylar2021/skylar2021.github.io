@@ -32,8 +32,10 @@ const date = () =>{
     today.innerHTML = `${date}: `
 }
 
-showWeather()
-date()
+document.addEventListener('DOMContentLoaded', ()=>{
+    showWeather()
+    date()
+})
 
 // toggle navbar
 const toggleNav = () => {
