@@ -29,34 +29,37 @@ h1,h3{
 }
 
 /* nav */
-
+.sb-globalNav__desktopLink--active {
+    box-shadow: inset 0 -6px #008248;
+}
 nav.web-nav{
     background-color: rgba(255, 255, 255, 0.5);
-    height: 25px;
+    height: max-content;
     position: sticky;
     top: 0px;
-    padding-top: 2px;
+    /* padding-top: 2px; */
     font-size: 1.1rem;
 }
 
 nav.web-nav .nav-items{
     display: flex;
-    justify-content: space-around;
-    align-content: center;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    text-align: center;
 }
 
 nav.mobile-nav{
     background-color: rgba(255, 255, 255, 0.5);
-    height: 25px;
+    height: max-content;
     position: sticky;
     top: 0px;
-    padding: 6px;
+    padding: 3px;
     font-size: 1.3rem;
     display: none;
 }
 nav.mobile-nav .nav-icon{
     padding: 0px 3px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 nav.mobile-nav .nav-icon:hover{
@@ -66,12 +69,19 @@ nav.mobile-nav .nav-icon:hover{
     cursor: pointer;
 }
 nav .nav-items .nav-item{
+    flex:1;
     color: black;
+    padding: 6px;
 }
 
 nav .nav-items .nav-item:hover{
     color: rgb(104, 23, 23);
     text-decoration: underline;
+}
+
+nav .nav-items .nav-item:focus-visible{
+    box-shadow: inset 0 -6px #008248;
+
 }
 
 /* about-me */
@@ -212,17 +222,21 @@ nav .nav-items .nav-item:hover{
 .skill{
     margin: 5px;
     padding: 5px;
-    width: 90px;
-    height: 90px;
+    width: 95px;
+    height: 95px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    transition-property: transform;
+    transition-duration: 0.4s;
 }
 
 .skill:hover{
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.5);
+    transform: rotate(1turn);
+
 }
 
 i.skill-icon{
@@ -248,6 +262,13 @@ i.skill-icon{
 
 .react{
     color: rgb(97, 219, 251);
+}
+
+.react-native{
+    color: rgb(97, 219, 251);
+    background-color: #282c34;
+    border-radius: 20px;
+    padding: 5px;
 }
 
 .what-next{
@@ -402,7 +423,7 @@ footer .email-address{
         height: 100vh;
         width: 40vw;
         position: fixed;
-        top: 36px;
+        top: 31px;
         left: -50%;
         z-index: 5;
     }
@@ -451,12 +472,13 @@ footer .email-address{
     /* skill and works */
 
     .skill{
-        width: 95px;
-        height: 120px;
+        padding: 10px;
+        width: 100px;
+        height: 100px;
     }
     
     i.skill-icon{
-        font-size: 90px;
+        font-size: 75px;
     }
     .cards{
         flex-direction: column;

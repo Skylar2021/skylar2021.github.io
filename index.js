@@ -1,8 +1,7 @@
 "use strict"
 
-const advice = document.querySelector('.advices')
+// const advice = document.querySelector('.advices')
 const toggleBtn = document.querySelector('.nav-icon')
-const toggleList = document.querySelector('nav.web-nav')
 const smallImg = document.querySelectorAll('.small-img')
 
 // show today weather 
@@ -12,7 +11,7 @@ const showWeather = async () => {
         let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=hongkong&appid=${apiKey}`)
         if (response.ok) {
             let result = await response.json()
-            let weatherIcon = result.weather[0].icon 
+            let weatherIcon = result.weather[0].icon
             let obj = result.weather[0]
             const weather = document.querySelector('.weather')
             const weatherDescript = document.querySelector('.weather-descript')
@@ -21,24 +20,25 @@ const showWeather = async () => {
             weatherDescript.innerHTML = obj.description
         }
     } catch (err) {
-            console.log(err.message)
-    }    
+        console.log(err.message)
+    }
 }
 
-const date = () =>{
+const date = () => {
     let now = new Date()
     let date = now.toDateString()
     const today = document.querySelector('.today')
     today.innerHTML = `${date}: `
 }
 
-document.addEventListener('DOMContentLoaded', ()=>{
+document.addEventListener('DOMContentLoaded', () => {
     showWeather()
     date()
 })
 
 // toggle navbar
 const toggleNav = () => {
+    const toggleList = document.querySelector('nav.web-nav')
     let toggle = toggleList.style
     toggle.left = toggle.left === '0px' ? toggle.left = '-50%' : toggle.left = '0px';
 }
