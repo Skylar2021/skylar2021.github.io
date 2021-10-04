@@ -39,6 +39,7 @@ nav.web-nav{
     top: 0px;
     /* padding-top: 2px; */
     font-size: 1.1rem;
+    
 }
 
 nav.web-nav .nav-items{
@@ -123,13 +124,14 @@ nav .nav-items .nav-item:focus-visible{
     word-wrap: break-word;
     line-height: 2rem;
     animation: leftright 0.5s;
-    animation-delay: 1s;
+    animation-delay: 2s;
 
 }
 
 .self-intro-scroll{
+    word-wrap: break-word;
     animation: leftright 0.2s;
-    animation-delay: 3s;
+    animation-delay: 4s;
 }
 
 .quote-name{
@@ -411,7 +413,9 @@ footer .email-address{
     }
     .self-intro{
         line-height: 1.4rem;
-        text-align:justify;
+        /* text-align:justify; */
+        display: block;
+        margin: auto;
     }
 
 }
@@ -426,6 +430,7 @@ footer .email-address{
         top: 31px;
         left: -50%;
         z-index: 5;
+        transition: left 800ms ease-in-out;
     }
 
     nav.mobile-nav{
