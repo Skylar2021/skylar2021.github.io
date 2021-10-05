@@ -285,11 +285,13 @@ i.skill-icon{
     color: rgb(97, 219, 251);
     background-color: #282c34;
     border-radius: 20px;
-    padding: 5px;
+    padding: 4px;
 }
 
-.what-next{
-    color: seagreen;
+.jquery{
+    background-color: #004177;
+    border-radius: 20px;
+    padding: 5px;
 }
 
 /* my works */
