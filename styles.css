@@ -60,7 +60,7 @@ nav.mobile-nav{
 }
 nav.mobile-nav .nav-icon{
     padding: 0px 3px;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 nav.mobile-nav .nav-icon:hover{
@@ -100,7 +100,9 @@ nav .nav-items .nav-item:focus-visible{
     background-color: rgba(0, 162, 255, 0.3);
     border-radius: 50%;
 }
-
+.weather-descript{
+    text-transform: capitalize;
+}
 .about-me{
     padding: 0px 10px 10px;
     height: 95vh;
@@ -116,6 +118,17 @@ nav .nav-items .nav-item:focus-visible{
     width: 250px;
     height: 250px;
     border-radius: 50%;
+    animation: fadeIn 2s;
+
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .self-intro{
@@ -186,6 +199,8 @@ nav .nav-items .nav-item:focus-visible{
     width: 645px;
     height: 430px;
 }
+
+
 
 .gallery-text{
     margin-top: 10px;
@@ -417,7 +432,6 @@ footer .email-address{
         display: block;
         margin: auto;
     }
-
 }
 
 @media screen and (max-width: 570px) {
@@ -428,9 +442,10 @@ footer .email-address{
         width: 40vw;
         position: fixed;
         top: 31px;
-        left: -50%;
+        /* left: -50%; */
         z-index: 5;
-        transition: left 800ms ease-in-out;
+        transition: left 700ms ease-in-out;
+        display: none;
     }
 
     nav.mobile-nav{

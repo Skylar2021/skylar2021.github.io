@@ -4,7 +4,7 @@
 const toggleBtn = document.querySelector('.nav-icon')
 const smallImg = document.querySelectorAll('.small-img')
 
-// show today weather 
+// show today weather by Open weather API 
 const showWeather = async () => {
     let apiKey = '4976d245ae88b90b3d05b2808b36fb24'
     try {
@@ -36,12 +36,13 @@ document.addEventListener('DOMContentLoaded', () => {
     date()
 })
 
-// toggle navbar
+// toggle navbar 
+
 const toggleNav = () => {
-    const toggleList = document.querySelector('nav.web-nav')
-    let toggle = toggleList.style
-    toggle.left = toggle.left === '0px' ? toggle.left = '-50%' : toggle.left = '0px';
-}
+        const toggleList = document.querySelector('nav.web-nav')
+        let toggle = toggleList.style
+        toggle.left = toggle.left === '0px' ? toggle.left = '-50%' : toggle.left = '0px';
+    }
 
 toggleBtn.addEventListener('click', () => {
     toggleNav()
@@ -53,6 +54,9 @@ navItem.forEach(item => {
         toggleNav()
     })
 })
+
+
+// change big image by click event 
 
 const changeImg = (targetImg) => {
     const bigImg = document.querySelector('.big-img')
@@ -66,6 +70,12 @@ smallImg.forEach(img => {
         changeImg(target)
     })
 })
+
+
+
+
+
+
 
 // advice.addEventListener("mouseover", e=>{
 //     e.target.innerHTML = 'Click to give me adivces'
