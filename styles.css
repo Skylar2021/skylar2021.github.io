@@ -197,8 +197,11 @@ nav .nav-items .nav-item:focus-visible{
 }
 
 .big-img{
+    opacity: 0;
     width: 645px;
     height: 430px;
+    transition-property: opacity;
+    transition-duration: 1s;
 }
 
 

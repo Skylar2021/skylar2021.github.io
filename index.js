@@ -1,5 +1,10 @@
 "use strict"
-
+window.addEventListener('scroll',()=>{
+    console.log(window.scrollY)
+    if(window.scrollY > 300){
+        document.querySelector('.big-img').style.opacity = 1
+    }
+})
 // const advice = document.querySelector('.advices')
 const toggleBtn = document.querySelector('.nav-icon')
 const smallImg = document.querySelectorAll('.small-img')
